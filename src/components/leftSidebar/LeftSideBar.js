@@ -1,7 +1,7 @@
 import React from "react";
 import useStyles from "./Styles";
-import { Grid, Typography } from "@material-ui/core";
-import { Person } from "@material-ui/icons";
+import {Grid, Typography} from "@material-ui/core";
+import {SupervisedUserCircle} from "@material-ui/icons";
 
 const LeftSideBar = () => {
     const classes = useStyles()
@@ -12,7 +12,7 @@ const LeftSideBar = () => {
                 <Typography className={classes.profUserName} component={"p"}>mohammadfathi1400</Typography>
             </Grid>
             <Grid item className={classes.BaseAvatar}>
-                <Person className={classes.Avatar}></Person>
+                <SupervisedUserCircle className={classes.Avatar}></SupervisedUserCircle>
             </Grid>
         </Grid>
     </div>

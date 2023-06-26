@@ -1,4 +1,4 @@
-import { makeStyles } from "@material-ui/core";
+import {makeStyles} from "@material-ui/core";
 
 const useStyles = makeStyles({
     root:{
@@ -13,7 +13,7 @@ const useStyles = makeStyles({
         fontSize : "1rem !important"
     },
     Avatar : {
-        fontSize : '5rem !important',
+        fontSize : '4rem !important',
         marginRight : '1rem !important',
     },
     BaseAvatar : {
