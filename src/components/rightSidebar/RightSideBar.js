@@ -4,7 +4,13 @@ import { Grid, Typography } from "@material-ui/core";
 import TwitterIcon from '@mui/icons-material/Twitter';
 import HashTag from "./HashTag/HashTag";
 
+
+
 const RightSideBar = () => {
+    const dataList = [
+        "به_تو_ربطی_نداره","به_تو_ربطی_نداره","به_تو_ربطی_نداره","به_تو_ربطی_نداره","به_تو_ربطی_نداره",
+        "به_تو_ربطی_نداره","به_تو_ربطی_نداره"
+    ];
   const classes = useStyles();
   return (
     <div className={classes.root}>
@@ -22,9 +28,7 @@ const RightSideBar = () => {
       </Typography>
         <Grid className={classes.hothastags} container direction="column">
 
-          <HashTag title={"به_تو_ربطی_نداره"} link={"#"} />     
-          <HashTag title={"به_تو_ربطی_نداره"} link={"#"} />
-          <HashTag title={"به_تو_ربطی_نداره"} link={"#"} />
+            { dataList.map(data => <HashTag title={data} link={"#"} /> ) }
 
         </Grid>
       </div>
