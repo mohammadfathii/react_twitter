@@ -1,10 +1,10 @@
-import { createTheme } from "@material-ui/core";
+import {createTheme} from "@material-ui/core";
 import tinycolor from "tinycolor2";
 
-const colorPrimary = "#0A83F5";
-const colorSecondary = "#32EDE7";
+const colorPrimary = "#1481e5";
+const colorSecondary = "#1db6b1";
 const colorError = "#FF0000";
-const colorSuccess = "#16B51A";
+const colorSuccess = "#20da24";
 
 // how to write your own theme and rewrite your own class styles in MuiTypography
 const IndexTheme = createTheme({
