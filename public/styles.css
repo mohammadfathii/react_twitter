@@ -1,8 +1,9 @@
 @import url('https://v1.fontapi.ir/css/Shabnam');
+@import url('https://v1.fontapi.ir/css/IranNastaliq');
 
 body{
     margin: 0;
     direction: rtl;
-    font-family: 'Shabnam';
+    font-family: 'IranNastaliq';
     overflow: hidden;
 }
