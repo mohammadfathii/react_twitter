@@ -1,34 +1,37 @@
 import React from 'react';
 import useStyles from "./Styles";
 import {Grid, Typography} from "@material-ui/core";
-import {SupervisedUserCircle} from "@material-ui/icons";
+import {Favorite, SupervisedUserCircle} from "@material-ui/icons";
 import {IconButton} from "@mui/material";
-import {HeartBroken} from "@mui/icons-material";
+import {BookmarkAdd} from "@mui/icons-material";
 
-const Tweet = ({username,tweet}) => {
-    const classes = useStyles()
-    return (
-        <div className={classes.root}>
+const Tweet = ({fullname,username,tweet}) => {
+        const classes = useStyles()
+        return (
+            <div className={classes.root}>
                 <Grid container direction={"row"} alignItems={"center"}>
                     <SupervisedUserCircle style={{ fontSize:'4rem' }}/>
-                    <Grid container item>
-                        <Typography className={classes.fullName}>محمد فتحی</Typography>
-                        <Typography className={classes.username}>@mohammad.fathi</Typography>
+                    <Typography className={classes.fullName}>{fullname}</Typography>
+                    <Typography className={classes.username}>{username}@</Typography>
+                    <Grid className={classes.tweetTextBox} container item>
+                        <Typography component={"p"}>
+                            {tweet}
+                        </Typography>
                     </Grid>
                 </Grid>
                 <Grid className={classes.TweetBtnContainer} container direction={"row-reversed"}>
-                    <IconButton>
-                        <HeartBroken style={{ fontSize:'3rem !important' }}></HeartBroken>
+                    <IconButton className={classes.TweetIcon}>
+                        <Favorite style={{ fontSize:'3rem !important',color : 'red' }}></Favorite>
                     </IconButton>
-                    <IconButton>
-                        <HeartBroken style={{ fontSize:'3rem !important' }}></HeartBroken>
+                    <IconButton className={classes.TweetIcon}>
+                        <BookmarkAdd style={{ fontSize:'3rem !important' }}></BookmarkAdd>
                     </IconButton>
                     <IconButton>
                         <Typography>1000</Typography>
                     </IconButton>
                 </Grid>
-        </div>
-    );
-};
+            </div>
+        );
+    };
 
 export default Tweet;

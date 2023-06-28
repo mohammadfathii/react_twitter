@@ -1,13 +1,10 @@
-import { makeStyles } from "@material-ui/core";
+import {makeStyles} from "@material-ui/core";
 
 const useStyles = makeStyles(theme => ({
     root : {
         width : '100%',
         height : '100vh',
         display : 'flex',
-        overflow : 'hidden',
-        flexWrap : 'wrap',
-        flexDirection : 'row'
     },
     divider : {
         backgroundColor : theme.palette.primary.main + " !important",

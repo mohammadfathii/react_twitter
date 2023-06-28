@@ -2,8 +2,7 @@
 @import url('https://v1.fontapi.ir/css/IranNastaliq');
 
 body{
-    margin: 0;
+    margin: 0 !important;
     direction: rtl;
-    font-family: 'IranNastaliq';
     overflow: hidden;
 }

@@ -4,8 +4,6 @@ const useStyles = makeStyles(theme => ({
     root : {
         backgroundColor : 'white !important',
         padding : '20px !important',
-        overflow : 'auto'
-
     },
     TweetInput:{
         flex : 1,
@@ -29,10 +27,22 @@ const useStyles = makeStyles(theme => ({
     },
     fullName : {
         fontSize : '1.5rem !important',
-        fontWeight : 600
+        fontWeight : 600,
+        marginRight: '20px',
     },
     username : {
-
+        marginRight: '20px',
+        fontSize : '0.8rem !important'
+    },
+    tweetTextBox:{
+        marginTop: '20px',
+        padding : '15px'
+    },
+    TweetIcon:{
+        border : '0.5px solid black !important',
+        padding : '10px !important',
+        borderRadius: '50% !important',
+        marginLeft: '10px !important'
     }
 }));
 

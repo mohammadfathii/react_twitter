@@ -16,7 +16,7 @@ const IndexTheme = createTheme({
             // }
             // ,
             body1 : {
-                fontFamily : 'Iran Nastaliq'
+                fontFamily : 'Shabnam'
             }
         }
     },
