@@ -3,7 +3,7 @@ import useStyles from "./Styles";
 import RightSideBar from "../rightSidebar/RightSideBar";
 import LeftSideBar from "../leftSidebar/LeftSideBar";
 import {Divider} from "@material-ui/core";
-import Tag from "../../pages/tag/Tag";
+import User from "../../pages/user/User";
 
 const Layout = () => {
     const classes = useStyles();
@@ -11,7 +11,8 @@ const Layout = () => {
         <RightSideBar/>
         <Divider orientation={"vertical"} className={classes.divider} />
         {/*<Home/>*/}
-        <Tag tagName={"به_تو_ربطی_نداره"}/>
+        {/*<Tag tagName={"به_تو_ربطی_نداره"}/>*/}
+        <User username={"mohammadfathi"}/>
         <Divider orientation={"vertical"} className={classes.divider} />
         <LeftSideBar/>
     </div>;
