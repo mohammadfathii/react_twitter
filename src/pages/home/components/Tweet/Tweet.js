@@ -4,6 +4,7 @@ import {Grid, Typography} from "@material-ui/core";
 import {Favorite, SupervisedUserCircle} from "@material-ui/icons";
 import {IconButton} from "@mui/material";
 import {BookmarkAdd} from "@mui/icons-material";
+import TextRender from "../../../../components/dataRender/textRender";
 
 const Tweet = ({fullname,username,tweet}) => {
         const classes = useStyles()
@@ -14,8 +15,7 @@ const Tweet = ({fullname,username,tweet}) => {
                     <Typography className={classes.fullName}>{fullname}</Typography>
                     <Typography className={classes.username}>{username}@</Typography>
                     <Grid className={classes.tweetTextBox} container item>
-                        <Typography component={"p"}>
-                            {tweet}
+                        <Typography dangerouslySetInnerHTML={{__html: TextRender(tweet)}} component={"p"}>
                         </Typography>
                     </Grid>
                 </Grid>
