@@ -2,9 +2,8 @@ import {makeStyles} from "@material-ui/core";
 
 const useStyles = makeStyles({
     root:{
-        backgroundColor : "white",
+        backgroundColor : "#e3e3e3",
         flex : 1,
-        padding : '20px'
     },
     mainHomeTitle:{
         fontSize:'1.5rem',
@@ -14,7 +13,7 @@ const useStyles = makeStyles({
     },
     divider : {
         width : '100% !important',
-        height:'3px'
+        height:'5px !important'
         // filter : 'opacity(1) !important'
     }
 })

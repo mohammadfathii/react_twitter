@@ -17,7 +17,7 @@ const LeftSideBar = () => {
         <Grid container direction="row-reverse" className={classes.baseProfile} alignItems="center">
             <Grid item direction="column" className={classes.profile}>
                 <Typography className={classes.profFullName} component={"p"}>محمد فتحی</Typography>
-                <Typography className={classes.profUserName} component={"p"}>mohammadfathi1400</Typography>
+                <Typography className={classes.profUserName} component={"p"}>@mohammadfathi1400</Typography>
             </Grid>
             <Grid item className={classes.BaseAvatar}>
                 <SupervisedUserCircle className={classes.Avatar}></SupervisedUserCircle>

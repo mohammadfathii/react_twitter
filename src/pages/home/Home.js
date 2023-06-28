@@ -1,15 +1,17 @@
 import React from "react";
 import useStyles from "./Styles";
-import {Grid} from "@material-ui/core";
+import {Divider} from "@material-ui/core";
+import Header from "./components/Header/Header";
+import TweetList from "./components/TweetList/TweetList";
+
 
 const Home = () => {
     const classes = useStyles()
-    return <React.Fragment>
-        <Grid container className={classes.root}>
-
-        </Grid>
-
-    </React.Fragment>
+    return <div className={classes.root}>
+        <Header/>
+        <Divider className={classes.divider}/>
+        <TweetList/>
+    </div>
 }
 
 export default Home;
