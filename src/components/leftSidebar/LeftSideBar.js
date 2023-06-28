@@ -3,13 +3,8 @@ import useStyles from "./Styles";
 import {Divider, Grid, Typography} from "@material-ui/core";
 import {SupervisedUserCircle} from "@material-ui/icons";
 import Twitter from "./twitter/twitter";
+import {topUsers} from '../../data/topusers'
 
-const dataList = [
-    { name : 'mohammad' , username : 'mohammadfathi1400' },
-    { name : 'mohammad' , username : 'mohammadfathi1400' },
-    { name : 'mohammad' , username : 'mohammadfathi1400' },
-    { name : 'mohammad' , username : 'mohammadfathi1400' }
-]
 
 const LeftSideBar = () => {
     const classes = useStyles()
@@ -27,10 +22,10 @@ const LeftSideBar = () => {
         <Grid container direction={"column"} className={classes.topTwitterList}>
             <Typography className={classes.topTwitterTitle}>لیست برترین خبر نگاران</Typography>
             <Divider className={classes.divider} />
-            {dataList.map((data,index) => {
+            {topUsers.map((data,index) => {
                 return <React.Fragment>
                     <Twitter name={data.name} username={data.username}/>
-                    {index < dataList.length-1  ?
+                    {index < topUsers.length-1  ?
                         <Divider className={classes.divider} />
                     : ''}
                 </React.Fragment>

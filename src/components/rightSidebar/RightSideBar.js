@@ -1,16 +1,11 @@
 import React from "react";
 import useStyles from "./Styles";
-import { Grid, Typography } from "@material-ui/core";
+import {Grid, Typography} from "@material-ui/core";
 import TwitterIcon from '@mui/icons-material/Twitter';
 import HashTag from "./HashTag/HashTag";
-
-
+import {tophashtags} from "../../data/tophashtags";
 
 const RightSideBar = () => {
-    const dataList = [
-        "به_تو_ربطی_نداره","به_تو_ربطی_نداره","به_تو_ربطی_نداره","به_تو_ربطی_نداره","به_تو_ربطی_نداره",
-        "به_تو_ربطی_نداره","به_تو_ربطی_نداره"
-    ];
   const classes = useStyles();
   return (
     <div className={classes.root}>
@@ -27,9 +22,7 @@ const RightSideBar = () => {
           داغ ترین هشتگ ها
       </Typography>
         <Grid className={classes.hothastags} container direction="column">
-
-            { dataList.map(data => <HashTag title={data} link={"#"} /> ) }
-
+            { tophashtags.map(data => <HashTag title={data} link={"#"} /> ) }
         </Grid>
       </div>
   );
