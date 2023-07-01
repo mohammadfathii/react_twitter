@@ -7,6 +7,12 @@ body{
     overflow: hidden;
 }
 
-a {
+.MuiTypography-body1 a {
     text-decoration : none !important;
+    color: blue;
 }
+
+.contenteditable:empty:before{
+    content: attr(data-placeholder);
+}
+

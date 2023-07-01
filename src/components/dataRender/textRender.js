@@ -13,7 +13,7 @@ const TextRender = (text) => {
     // console.log(newWords)
     // return newWords.join(" ");
 
-    let newText = text.replace(/#\S+/g,"<a href={$&}>$&</a>")
+    let newText = text.replace(/#\S+/g,"<a href='/tags/$&'>$&</a>")
     return newText;
 };
 
