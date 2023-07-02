@@ -1,4 +1,4 @@
-import { makeStyles } from "@material-ui/core";
+import {makeStyles} from "@material-ui/core";
 
 const useStyles = makeStyles(theme => ({
     root:{
@@ -14,7 +14,8 @@ const useStyles = makeStyles(theme => ({
         color : theme.palette.primary.light,
         fontSize : '1.5rem !important',
         fontWeight : '600 !important',
-        marginRight : '20px !important'
+        marginRight : '20px !important',
+        textDecoration : 'none'
     },
 
     

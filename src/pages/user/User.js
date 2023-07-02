@@ -4,11 +4,13 @@ import {Divider, Grid, Typography} from "@material-ui/core";
 import Tweet from "../home/components/Tweet/Tweet";
 import {tweetsList} from "../../data/tweets";
 import {SupervisedUserCircle} from "@material-ui/icons";
+import {useParams} from "react-router-dom";
 
-const User = ({username}) => {
+const User = () => {
+    const { username } = useParams();
     const classes = useStyles();
     return (
-        <div className={classes.root}>
+        <>
             <Grid className={classes.headerBox} container direction={"row"} alignItems={"center"}>
                 <SupervisedUserCircle className={classes.usericon}/>
                 <Typography className={classes.tagTitle} component={"h1"}>{username}</Typography>
@@ -18,7 +20,7 @@ const User = ({username}) => {
             {tweetsList.map((data,index) => { return <><Tweet fullname={data.fullname} username={data.username} tweet={data.tweet}/> { (index < tweetsList.length - 1) ?
                 <Divider className={classes.divider}/> : ""}</> })}
 
-        </div>
+        </>
     );
 };
 

@@ -8,12 +8,14 @@ const useStyles = makeStyles(theme =>({
     profFullName : {
         fontSize : "1rem !important",
         flex : 1,
-        color : theme.palette.primary.dark
+        color : theme.palette.primary.dark,
+        textDecoration : 'none'
     },
     profUserName : {
         fontSize : "0.8rem !important",
         flex : 1,
-        color : theme.palette.secondary.dark
+        color : theme.palette.secondary.dark,
+        textDecoration : 'none'
     },
     Avatar : {
         fontSize : '4rem !important',

@@ -7,12 +7,12 @@ import {tweetsList} from '../../data/tweets'
 
 const Home = () => {
     const classes = useStyles()
-    return <div className={classes.root}>
+    return <>
         <Header/>
         <Divider className={classes.divider}/>
         {tweetsList.map((data,index) => { return <><Tweet fullname={data.fullname} username={data.username} tweet={data.tweet}/> { (index < tweetsList.length - 1) ?
                     <Divider className={classes.divider}/> : ""}</> })}
-    </div>
+    </>
 }
 
 export default Home;

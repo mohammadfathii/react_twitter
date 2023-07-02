@@ -17,6 +17,9 @@ const IndexTheme = createTheme({
             // ,
             body1 : {
                 fontFamily : 'Shabnam',
+            },
+            h1:{
+                fontSize : '2rem !important'
             }
         }
     },

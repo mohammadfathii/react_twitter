@@ -10,6 +10,11 @@ const useStyles = makeStyles(theme => ({
         backgroundColor : theme.palette.primary.main + " !important",
         height : '100% !important',
         filter : 'opacity(0.2) !important'
+    },
+    main : {
+        backgroundColor : "#e3e3e3",
+        flex : 1,
+        overflowY : 'scroll !important'
     }
 }))
 

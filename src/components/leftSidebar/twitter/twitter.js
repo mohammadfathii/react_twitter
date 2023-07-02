@@ -10,8 +10,8 @@ const Twitter = ({name,username}) => {
             <ButtonBase style={{ width:'max-content' }}>
                 <Grid container direction="row-reverse" className={classes.baseProfile} alignItems="center">
                     <Grid item direction="column" className={classes.profile}>
-                        <Typography className={classes.profFullName} component={"p"}>{name}</Typography>
-                        <Typography className={classes.profUserName} component={"p"}>{username}@</Typography>
+                        <Typography href={"/user/"+username} className={classes.profFullName} component={"a"}>{name}</Typography><br/>
+                        <Typography href={"/user/"+username} className={classes.profUserName} component={"a"}>{username}@</Typography>
                     </Grid>
                     <Grid item className={classes.BaseAvatar}>
                         <SupervisedUserCircle className={classes.Avatar}></SupervisedUserCircle>

@@ -1,13 +1,6 @@
 import {makeStyles} from "@material-ui/core";
 
 const useStyles = makeStyles({
-    root :{
-        backgroundColor : 'white',
-        padding:'20px',
-        flex:1,
-        overflowY:'scroll !important',
-
-    },
     tagTitle: {
         fontWeight : 600,
         fontSize : '1.5rem !important',
@@ -19,7 +12,8 @@ const useStyles = makeStyles({
         // filter : 'opacity(1) !important'
     },
     headerBox:{
-        marginBottom : '4rem'
+        backgroundColor : 'white',
+        padding : '30px'
     },
     usericon : {
         fontSize : '2.5rem !important'

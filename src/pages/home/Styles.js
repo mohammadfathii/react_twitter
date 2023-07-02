@@ -1,11 +1,6 @@
 import {makeStyles} from "@material-ui/core";
 
 const useStyles = makeStyles({
-    root:{
-        backgroundColor : "#e3e3e3",
-        flex : 1,
-        overflowY : 'scroll !important'
-    },
     mainHomeTitle:{
         fontSize:'1.5rem',
         fontWeight : '600',
